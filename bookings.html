@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a visit</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" tabindex="1" aria-label="Skip to main content">Skip to content</a>
+    <header>
+        <a href="index.html"><img src="logo.png" class="logo" alt="PurrfectPaws Cat Hotel" tabindex="2"></a>
+        <nav class="navbar" aria-label="Main">
+            <ul>
+                <li><a href="index.html" id="nav-home" tabindex="3">Home</a></li>
+                <li><a href="services.html" id="nav-services" tabindex="4">Services</a></li>
+                <li><a href="bookings.html" id="nav-bookings" tabindex="5">Book a visit</a></li>
+                <li><a href="accessibility.html" id="nav-accessibility" tabindex="6">Accessibility</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="accessibility-features">
+        <button onclick="increaseFontSize()" tabindex="7">Increase font size + </button>
+        <button onclick="decreaseFontSize()" tabindex="8">Decrease font size - </button>
+    </div>
+    <main id="main-content">
+        <h1>Book a visit for your cat</h1>
+        <p class="instructions">Please fill in the form below to book a service for your cat.</p>
+        <form>
+            <p><span class="required">*</span> = Required field</p>
+            <fieldset>
+                <legend>Owner Information</legend>
+                <label for="firstname">First name: <span class="required">*</span> </label>
+                <input type="text" name="firstname" id="firstname" placeholder="John" required>
+
+                <label for="lastname">Last name: <span class="required">*</span> </label>
+                <input type="text" name="lastname" id="lastname" placeholder="Smith" required>
+
+                <label for="email">Email: <span class="required">*</span> </label>
+                <input type="email" name="email" id="email" placeholder="johnsmith@mail.com" required>
+
+                <label for="phone">Phone number: <span class="required">*</span> </label>
+                <input type="tel" name="phone" id="phone" placeholder="0401234567" required>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Your Cat's Information</legend>
+                <label for="catsname">Cat's name: <span class="required">*</span> </label>
+                <input type="text" name="catsname" id="catsname" placeholder="Kitty" required>
+
+                <label for="breed">Breed: <span class="required">*</span> </label>
+                <input type="text" name="breed" id="breed" placeholder="norwegian forest cat" required>
+                
+                <label for="catsage">Age: <span class="required">*</span></label>
+                <input type="number" name="catsage" id="catsage" placeholder="5" required>
+                <br><br>
+                <label for="gender">Gender: <span class="required">*</span> </label>
+                <div class="gender-container">
+                    <label><input type="radio" id="female" name="gender" value="female" required> Female</label>
+                    <label><input type="radio" id="male" name="gender" value="male"> Male</label>
+                </div>
+                <br>
+                <label for="vaccination">Vaccinated: <span class="required">*</span> </label>
+                <div class="vaccination-container">
+                    <label><input type="radio" id="vaccinated" name="vaccination" value="yes" required> Yes</label>
+                    <label><input type="radio" id="notvaccinated" name="vaccination" value="no"> No</label>
+                </div>
+                <br>
+                <label for="medications">Tell us about your cats' possible medications:</label>
+                <textarea id="medications" name="medications" rows="3" cols="60"></textarea>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Services</legend>
+                <p>Service type: <span class="required">*</span> </p>
+                <div class="servicetype-container">
+                    <label><input type="checkbox" name="services" value="daycare">Daycare</label>
+                    <label><input type="checkbox" name="services" value="boarding">Boarding</label>
+                    <label><input type="checkbox" name="services" value="bath dry andbrushing">Bath, dry and brushing</label>
+                    <label><input type="checkbox" name="services" value="trim">Trim</label>
+                    <label><input type="checkbox" name="services" value="Nail clipping and ear cleaning">Nail clipping and ear cleaning</label>
+                    <label><input type="checkbox" name="services" value="Adventure walks">Adventure walks</label>
+                    <label><input type="checkbox" name="services" value="Daily play time">Daily play time</label>
+                    <label><input type="checkbox" name="services" value="pamperpackage">Pamper Package</label>
+                    <label><input type="checkbox" name="services" value="deluxespapackage">Deluxe Spa Package</label>
+                </div>
+                <br>
+                <p>Duration of your visit:</p>
+                <label for="start-date">Start Date: <span class="required">*</span> </label>
+                <input type="date" id="start-date" name="start-date" required>
+                <label for="end-date">End Date: <span class="required">*</span> </label>
+                <input type="date" id="end-date" name="end-date" required>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <label for="specialinstructions">Special needs, diets, or requests:</label>
+                <textarea id="specialinstructions" name="specialinstructions" rows="3" cols="60"></textarea>
+            </fieldset>
+            <hr>
+            <br>
+            <fieldset>
+                <legend>Consents</legend>
+                <label><input type="checkbox" name="termsandconditions" required> I accept the terms and conditions <span class="required">*</span> </label>
+                <label><input type="checkbox" name="allowsocialmediasharing"> Allow sharing pictures and videos of your cat on social media?</label>
+            </fieldset>
+            <button type="submit" id="submit-booking">Book a visit</button>
+        </form>
+    </main>
+    <footer>
+        <div class="flex-container">
+                <div>
+                    <address><strong>PurrfectPaws Cat Hotel </strong><br>
+                        Lorem Ipsum road 123 <br>
+                        123456 Cat City
+                    </address>
+                </div>
+                <div>
+                    <p>Call Us: (123) 456-7890</p>
+                    <p>Email: purrfectpaws@mail.com</p>
+                </div>
+              <div>
+                <p>Follow us:</p>
+                <div class="socialmedia-container">
+                    <a href="https://www.facebook.com/" target="_blank" class="socialmedia-logo"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-icon.png" alt="facebook logo" height="30px"></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="socialmedia-logo"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/black-instagram-icon.png" alt="instagram logo" height="30px"></a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="socialmedia-logo"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tiktok-square-icon.png" alt="tiktok logo" height="30px"></a> 
+                </div>
+                </div>
+                </div>
+                <div>
+                    <img src="logo_bw.png" alt="PurrfectPaws Cat Hotel logo" height="50px">
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
