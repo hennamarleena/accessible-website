@@ -11,7 +11,7 @@
 4. Consistency
 - Maintained consistent design throughout the website
 5. Highlights
-- Used bullet points here on the home page to quickly highlight key features and services
+- Used bullet points on the home page to quickly highlight key features and services
 
 ## Implemented Accessibility Features
 1. "Skip to Main Content"  -link
