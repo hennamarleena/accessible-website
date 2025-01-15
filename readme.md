@@ -1,33 +1,44 @@
 # Accessible website
-- This is website/project work for HAMK's online course about web accessibility
+- project is for HAMK Online Course on Web Accessibility
 
-**Explain how you took cognitive accessibility into consideration**
--	I made sure that there is a sufficient color contrast so it’s easy to read 
--	I used plain language: simple, not too much text, quite short sentences and straight to point text blocks
--	clear structure/layout, not very surprising, safe and basic
--	I tried to be as consistent as possible with my design
--	I used bullet points here in the home page to quickly highlight key features and services
+## Cognitive Accessibility Considerations
+1. Color contrast
+- ensured sufficient contrast for easy readability
+2. Plain language
+- Used simple language with quite short sentences and straight-to-the-point text blocks.
+3. Clear structure/layout
+- Created a predictable, safe layout for user familiarity
+4. Consistency
+- Maintained consistent design throughout the website
+5. highlights
+- Used bullet points here on the home page to quickly highlight key features and services
 
-**Explain the accessibility features that you have implemented and demonstrate briefly how you implemented those**
--	I made "skip to main content" link on the top left corner, here I used WAI ARIA, and put aria-label="Skip to main content" attribute  to that element because I noticed that otherwise the screen reader couldn’t regocnise it properly
--	I put it to tabindex 1, and also made a little javascript code that makes sure that it’s surely on focus when you open the page
-
--	In services page, I made quick links to section ( + little wai aria here)
-
--	I implemented an option to Scale Text bigger or smaller. It can be changed with a button, it's made with a javascript function.
--	I made some changes to tabindex order so that it would go through nav bar first and then to those buttons
-
--	Indicating current location on the website, within navigation bar, current active page has underline on nav bar, made with javascript, user knows where they are
-
-
-**Report on the evaluation tool, keyboard and / or screen reader that you used to test your project's accessibility**
--	The screen reader I used was NVDA screen reader
--	for example, I made sure that it was possible to navigate with headings and move around only with keyboard
--	I tested menus, tab orders, forms...
+## Implemented Accessibility Features
+1. "Skip to Main Content"  -link
+- Positioned at the top left corner with aria-label="Skip to main content".
+- Added tabindex=1 and a JavaScript function to ensure focus upon opening the page.
+2. Quick Links on Services Page:
+- Enabled quick section navigation using WAI-ARIA attributes.
+3. Text Scaling Option: 
+- Added buttons to increase or decrease text size via JavaScript function.
+4. Tab Order Adjustments:
+- Organized tab order to prioritize the navigation bar, followed by buttons.
+5. Current Location Indication:
+- Used JavaScript to underline the active page in the navigation bar, ensuring users can identify their location easily.
 
 
-**Explain how you used the evaluation tool with your project and describe any issues or challenges that you encountered**
--	I made a first version of my whole site and after that I used Axe dev tools – chrome extension to test my site. It alerted some problems with contrast ratio so I had to change my design a bit
--	I noticed that evaluation tools wouldn’t find the same issues, so I also tested with Siteimprove Accessibility Checker. It said that my nav buttons did not meet efficient size, so I made them little bigger
--	I also tested my pages and colors with contrast checker https://webaim.org/resources/contrastchecker/
+## Evaluation Tools and Testing
+**Screen Reader Testing**
+- Tool Used: NVDA Screen Reader.
+- Verified accessibility by navigating via headings, testing keyboard-only navigation, checking menus, tab orders, and forms.
+**Evaluation tools**
+1. Axe DevTools (Chrome Extension):
+- Initial test revealed contrast ratio issues, leading to design updates.
+2. Siteimprove Accessibility Checker:
+- Detected insufficient button sizes in the navigation bar, which were adjusted
+3. Contrast Checker:
+- Used WebAIM Contrast Checker to validate color contrast compliance.
 
+## Areas for Improvement
+- "Book a visit" page is not properly usable for screen readers
+- The website lacks ARIA roles and labels
