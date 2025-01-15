@@ -10,7 +10,7 @@
 - Created a predictable, safe layout for user familiarity
 4. Consistency
 - Maintained consistent design throughout the website
-5. highlights
+5. Highlights
 - Used bullet points here on the home page to quickly highlight key features and services
 
 ## Implemented Accessibility Features
