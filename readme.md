@@ -31,6 +31,7 @@
 **Screen Reader Testing**
 - Tool Used: NVDA Screen Reader.
 - Verified accessibility by navigating via headings, testing keyboard-only navigation, checking menus, tab orders, and forms.
+
 **Evaluation tools**
 1. Axe DevTools (Chrome Extension):
 - Initial test revealed contrast ratio issues, leading to design updates.
